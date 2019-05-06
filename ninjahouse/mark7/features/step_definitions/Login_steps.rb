@@ -29,5 +29,5 @@ end
  Então("devo ver a mensagem de alerta {string}") do |mensagem|
    #alerta_login = find('.alert-login')
    expect(@login_page.alerta.text).to eql mensagem
-   
-end
+   sleep 1
+ end

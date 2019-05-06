@@ -1,10 +1,5 @@
-class TarefasPage 
-
-    include Capybara::DSL
-
-    def ola
-        find('#task-board h3')
-    end
+class TarefasPage < SitePrism::Page
+    element :ola, '#task-board h3'
 
 end
 

@@ -1,14 +1,11 @@
 
-class Navbar 
 
-    include Capybara::DSL
-    
-    def menu_usuario
-        find('.profile-address')
-    end
+class Navbar < SitePrism::Page
+    element :menu_usuario,'.profile-address'
+    element :link_bar,'a[href$=logout]'
 
     def sair
         menu_usuario.click
-        find('a[href$=logout]').click
+        link_bar.click
     end
- end
+end

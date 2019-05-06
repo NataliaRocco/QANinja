@@ -6,14 +6,13 @@ Funcionalidade: Login
     Sendo um usuario cadastrado
     Posso acessar o sistema com meu email e minha senha
    
-@logout @smoke
+     @logout
     Cenario: Usuario Autenticado
 
         Dado que estou na página de login
         Quando faço login com "natalia.rocco@hotmail.com" e "123456"
         Então devo ver a mensagem "Olá, Natalia"
 
-@tentativa
     Esquema do Cenario: Tentativa de Login
 
         Dado que estou na página de login
