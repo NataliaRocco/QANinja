@@ -5,6 +5,7 @@ require 'cucumber'
 require 'selenium/webdriver'
 require 'Capybara'
 require 'Capybara/cucumber'
+require 'site_prism'
 
 
 Capybara.configure do |config|

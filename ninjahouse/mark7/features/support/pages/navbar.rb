@@ -1,6 +1,4 @@
-
-
-class Navbar < SitePrism::Page
+class Navba < SitePrism::Page
     element :menu_usuario,'.profile-address'
     element :link_bar,'a[href$=logout]'
 
