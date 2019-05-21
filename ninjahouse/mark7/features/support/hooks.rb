@@ -1,7 +1,10 @@
 
+Before do
+    @page = Pages.new
+    @component = Components.new
+end
 
 After('@logout') do
-
-    @nav = Navbar.new
-    @nav.sair
+    @component.nav.sair
+    expect(@page.login.estou_pagina?).to be true
 end
